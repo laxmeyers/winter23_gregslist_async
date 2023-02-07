@@ -77,7 +77,7 @@ export class HousesController {
     }
 
     drawEditHouseForm(houseId) {
-        console.log(houseId);
+        // console.log(houseId);
         _drawEditForm(houseId)
         
     }
@@ -86,7 +86,7 @@ export class HousesController {
         try {
             window.event.preventDefault()
             const form = window.event.target
-            console.log('form',form);
+            // console.log('form',form);
 
             const formData = getFormData(form)
             await housesService.editHouse(formData, houseId)

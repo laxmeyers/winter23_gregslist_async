@@ -113,15 +113,16 @@ export class House {
               </div>
               <div class="mb-3">
                 <label for="img" class="form-label">img</label>
-                <input required type="text" class="form-control" id="img" placeholder="img..." name="imgUrl">
+                <input required type="text" class="form-control" id="img" value="${house.img}" placeholder="img..." name="imgUrl">
               </div>
               <div class="mb-3">
                 <label for="price" class="form-label">price</label>
-                <input required type="number" class="form-control" id="price" placeholder="price..." name="price">
+                <input required type="number" class="form-control" id="price" value="${house.price}" placeholder="price..." name="price">
               </div>
               <div class="mb-3">
                 <label for="description" class="form-label">description</label>
                 <textarea name="description" class="form-control" id="description" rows="3">
+                ${house.description}
                 </textarea>
               </div>
             </div>
