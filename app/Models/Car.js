@@ -1,5 +1,6 @@
+
 export class Car {
-  constructor (data) {
+  constructor(data) {
     this.id = data.id || ''
     this.createdAt = data.createdAt
     this.description = data.description
@@ -53,7 +54,7 @@ export class Car {
     return `
     <div class="modal-content">
       <div class="modal-header">
-        <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Cars</h1>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <form ${editable.id ? `onsubmit="app.carsController.editCar('${editable.id}')"` : 'onsubmit="app.carsController.createCar()"'}>

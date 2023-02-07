@@ -22,7 +22,7 @@ function _drawCars() {
 }
 
 export class CarsController {
-  constructor () {
+  constructor() {
     this.getCars()
     appState.on('cars', _drawCars)
   }
@@ -45,7 +45,7 @@ export class CarsController {
       const form = window.event.target
       const formData = getFormData(form)
       // NOTE make sure your form data is formatted correctly to work with your API!!!
-      console.log(formData);
+      // console.log(formData);
       await carsService.createCar(formData)
     } catch (error) {
       console.error(error)
@@ -85,7 +85,7 @@ export class CarsController {
       window.event.preventDefault()
       const form = window.event.target
       const formData = getFormData(form)
-      console.log(formData);
+      // console.log(formData);
       await carsService.editCar(formData, carId)
     } catch (error) {
       console.error(error)
